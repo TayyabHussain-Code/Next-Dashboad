@@ -1,6 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
+
+  experimental: {
+    // ✅ This removes the DevTools logo
+    nextScriptWorkers: false,
+  },
+
+  devIndicators: {
+    buildActivity: false,
+  },
 };
 
 export default nextConfig;
